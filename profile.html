@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心 - 乐购商城</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-left">
+                    <span>欢迎来到乐购商城</span>
+                </div>
+                <div class="header-right">
+                    <a href="login.html" id="login-link">登录</a>
+                    <span>|</span>
+                    <a href="register.html">注册</a>
+                    <span>|</span>
+                    <a href="profile.html">个人中心</a>
+                    <span>|</span>
+                    <a href="cart.html" id="cart-link">购物车(<span id="cart-count">0</span>)</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Logo和搜索框 -->
+        <div class="header-main">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="images/LOGO.PNG" alt="乐购商城"></a>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="搜索商品...">
+                    <button id="search-btn">搜索</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 个人中心内容 -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-content">
+                <!-- 侧边栏 -->
+                <aside class="sidebar">
+                    <!-- 用户信息 -->
+                    <div class="user-info">
+                        <div class="avatar" id="user-avatar">U</div>
+                        <div class="user-details">
+                            <div class="user-name" id="user-name">用户名</div>
+                            <div class="user-email" id="user-email">email@example.com</div>
+                        </div>
+                    </div>
+                    
+                    <!-- 侧边栏菜单 -->
+                    <nav class="sidebar-nav">
+                        <div class="sidebar-menu" id="sidebar-menu">
+                            <!-- 菜单将通过JS动态加载 -->
+                        </div>
+                    </nav>
+                    
+                    <!-- 退出登录 -->
+                    <button id="logout-btn" class="logout-btn">退出登录</button>
+                </aside>
+                
+                <!-- 主内容区 -->
+                <main class="main-content">
+                    <!-- 订单面板 -->
+                    <div class="content-panel" id="orders-panel">
+                        <h2>我的订单</h2>
+                        <div class="order-list" id="order-list">
+                            <!-- 订单将通过JS动态加载 -->
+                        </div>
+                    </div>
+                    
+                    <!-- 地址面板 -->
+                    <div class="content-panel" id="address-panel" style="display:none;">
+                        <h2>收货地址</h2>
+                        <div class="address-list" id="address-list">
+                            <!-- 地址将通过JS动态加载 -->
+                        </div>
+                        <button class="add-address-btn" onclick="showAddAddressModal()">+ 添加新地址</button>
+                    </div>
+                    
+                    <!-- 优惠券面板 -->
+                    <div class="content-panel" id="coupons-panel" style="display:none;">
+                        <h2>我的优惠券</h2>
+                        <div class="coupon-list" id="coupon-list">
+                            <!-- 优惠券将通过JS动态加载 -->
+                        </div>
+                    </div>
+                    
+                    <!-- 设置面板 -->
+                    <div class="content-panel" id="settings-panel" style="display:none;">
+                        <h2>账户设置</h2>
+                        <!-- 设置内容将通过JS动态加载 -->
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- 添加地址弹窗 -->
+    <div class="modal-overlay" id="address-modal">
+        <div class="modal-content">
+            <h3>添加收货地址</h3>
+            <form id="address-form">
+                <div class="form-group">
+                    <input type="text" id="new-address-name" placeholder="收货人姓名">
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="new-address-phone" placeholder="联系电话">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="new-address-province" placeholder="省/市">
+                </div>
+                <div class="form-group">
+                    <textarea id="new-address-detail" placeholder="详细地址"></textarea>
+                </div>
+                <div class="modal-buttons">
+                    <button type="button" class="modal-btn cancel" onclick="hideAddAddressModal()">取消</button>
+                    <button type="submit" class="modal-btn confirm">确认添加</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <p>学号：27199 | 姓名：学生</p>
+                <p>© 2026 乐购商城 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/profile.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+/* 登录页面样式 */
+
+/* 登录区域 */
+.login-section {
+    padding: 50px 0;
+    background: linear-gradient(135deg, #ff6700 0%, #ff8a33 100%);
+    min-height: calc(100vh - 180px);
+}
+
+.login-box {
+    width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 24px;
+}
+
+/* 表单样式 */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #ff6700;
+}
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+/* 错误提示 */
+.error {
+    display: block;
+    color: #ff4444;
+    font-size: 12px;
+    margin-top: 5px;
+    min-height: 18px;
+}
+
+/* 复选框组 */
+.checkbox-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #666;
+    font-size: 14px;
+}
+
+.checkbox-label input {
+    width: auto;
+    margin-right: 8px;
+}
+
+.forgot-link {
+    color: #ff6700;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* 登录按钮 */
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background: #ff6700;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background: #ff5700;
+}
+
+.login-btn:active {
+    transform: scale(0.98);
+}
+
+/* 注册链接 */
+.register-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #ff6700;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* 响应式 */
+@media (max-width: 480px) {
+    .login-box {
+        width: 90%;
+        padding: 25px;
+    }
+}

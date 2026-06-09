@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品详情 - 乐购商城</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-left">
+                    <span>欢迎来到乐购商城</span>
+                </div>
+                <div class="header-right">
+                    <a href="login.html" id="login-link">登录</a>
+                    <span>|</span>
+                    <a href="register.html">注册</a>
+                    <span>|</span>
+                    <a href="profile.html">个人中心</a>
+                    <span>|</span>
+                    <a href="cart.html" id="cart-link">购物车(<span id="cart-count">0</span>)</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Logo和搜索框 -->
+        <div class="header-main">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="images/LOGO.PNG" alt="乐购商城"></a>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="搜索商品...">
+                    <button id="search-btn">搜索</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 商品详情 -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="index.html">首页</a> > <span id="category-name">商品详情</span>
+            </div>
+            
+            <div class="product-content" id="product-content">
+                <!-- 商品信息将通过JS动态加载 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 相关商品推荐 -->
+    <section class="related-products">
+        <div class="container">
+            <h2>相关商品</h2>
+            <div class="related-grid" id="related-grid">
+                <!-- 相关商品将通过JS动态加载 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <p>学号：27199 | 姓名：学生</p>
+                <p>© 2026 乐购商城 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/product.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

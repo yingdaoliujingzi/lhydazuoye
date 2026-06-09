@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乐购商城 - 首页</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-left">
+                    <span>欢迎来到乐购商城</span>
+                </div>
+                <div class="header-right">
+                    <a href="login.html" id="login-link">登录</a>
+                    <span>|</span>
+                    <a href="register.html">注册</a>
+                    <span>|</span>
+                    <a href="profile.html">个人中心</a>
+                    <span>|</span>
+                    <a href="cart.html" id="cart-link">购物车(<span id="cart-count">0</span>)</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Logo和搜索框 -->
+        <div class="header-main">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/LOGO.PNG" alt="乐购商城">
+                </div>
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="搜索商品...">
+                    <button id="search-btn">搜索</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 分类导航 -->
+    <nav class="category-nav">
+        <div class="container">
+            <div class="category-list" id="category-list">
+                <div class="category-item active" data-category="all">全部商品</div>
+                <div class="category-item" data-category="fresh">生鲜食品</div>
+                <div class="category-item" data-category="clothes">服装鞋帽</div>
+                <div class="category-item" data-category="home">家居用品</div>
+                <div class="category-item" data-category="kitchen">厨房电器</div>
+                <div class="category-item" data-category="hot">热门推荐</div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 轮播图 -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner-wrapper" id="banner-wrapper">
+                <div class="banner-list" id="banner-list">
+                    <div class="banner-item active">
+                        <img src="images/banner1.png" alt="轮播图1">
+                    </div>
+                    <div class="banner-item">
+                        <img src="images/banner_1.png" alt="轮播图2">
+                    </div>
+                    <div class="banner-item">
+                        <img src="images/MS1.JPEG" alt="轮播图3">
+                    </div>
+                </div>
+                <button class="banner-prev" id="banner-prev">&#10094;</button>
+                <button class="banner-next" id="banner-next">&#10095;</button>
+                <div class="banner-dots" id="banner-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 分类侧边栏 -->
+    <section class="main-content">
+        <div class="container">
+            <div class="sidebar">
+                <h3>商品分类</h3>
+                <ul class="sidebar-categories">
+                    <li><a href="#" data-category="fresh"><img src="images/fresh_left.png" alt="生鲜">生鲜食品</a></li>
+                    <li><a href="#" data-category="clothes"><img src="images/clothes_left.png" alt="服装">服装鞋帽</a></li>
+                    <li><a href="#" data-category="home"><img src="images/home_left.png" alt="家居">家居用品</a></li>
+                    <li><a href="#" data-category="kitchen"><img src="images/kitchen_left.png" alt="电器">厨房电器</a></li>
+                    <li><a href="#" data-category="hot"><img src="images/hot1.png" alt="热门">热门推荐</a></li>
+                </ul>
+            </div>
+
+            <!-- 商品展示 -->
+            <div class="product-area">
+                <div class="section-title">
+                    <h2>热门商品</h2>
+                    <a href="#" class="more">查看更多</a>
+                </div>
+                <div class="product-grid" id="product-grid">
+                    <!-- 商品将通过JS动态加载 -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 推荐商品 -->
+    <section class="recommend">
+        <div class="container">
+            <div class="section-title">
+                <h2>为你推荐</h2>
+            </div>
+            <div class="recommend-grid" id="recommend-grid">
+                <!-- 推荐商品将通过JS动态加载 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-info">
+                <p>学号：27199 | 姓名：学生</p>
+                <p>© 2026 乐购商城 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
